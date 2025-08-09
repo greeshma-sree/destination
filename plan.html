@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Your Trip - WanderGuide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50">
+    <!-- <nav
+      class="gap-5 bg-black/50 p-5 h-100vh flex items-center justify-between px-20 absolute top-0 w-full z-0"
+    >
+
+      <a href="">
+        <img
+          class="bg-white rounded-full"
+          width="80px"
+          src="./media/logo.png"
+          alt=""
+        />
+      </a>
+
+      <ul
+        class="lg:text-xl sm:text-[9px] justify-center list-none flex gap-5 mr-10 mt-10 text-2xl font-medium text-white"
+      >
+        <li>
+          <a class="hover:underline underline-offset-10" href="">
+            Things to do
+          </a>
+        </li>
+        <li>
+          <a class="hover:underline underline-offset-10" href="">
+            Where to go
+          </a>
+        </li>
+        <li>
+          <a class="hover:underline underline-offset-10" href="">
+            What to see
+          </a>
+        </li>
+        <li>
+          <a class="hover:underline underline-offset-10" href="./plan.html">
+            Plan your trip
+          </a>
+        </li>
+        <li>
+          <a class="hover:underline underline-offset-10" href=""> Events </a>
+        </li>
+      </ul>
+      <div class="gap-5 flex">
+        <div
+          class="text-2xl text-white border p-1.5 rounded-full hover:bg-black/20"
+        >
+          <i class="fa-regular fa-map"></i>
+        </div>
+        <div
+          class="text-2xl text-white border p-1.5 rounded-full hover:bg-black/20"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </nav> -->
+
+    <section class="bg-indigo-600 py-16 h-[80vh] flex flex-col justify-center items-center relative">
+        <img src="https://roaminghistorian.com/wp-content/uploads/2024/02/plan-your-trip.png" alt="" class="absolute z-0 top-0 w-full h-full object-cover">
+      <div class="max-w-10xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          Plan Your Perfect Trip
+        </h1>
+        <p class="text-xl text-gray-200 max-w-2xl mx-auto">
+          Create your personalized travel itinerary in just a few simple steps.
+          Tell us your preferences and we'll craft the perfect adventure for
+          you.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">How It Works</h2>
+          <p class="text-lg text-gray-600">
+            Follow these simple steps to plan your dream vacation
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div
+              class="bg-indigo-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4"
+            >
+              1
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              Choose Destination
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Select where you want to go from our extensive list of
+              destinations
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="bg-purple-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4"
+            >
+              2
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              Set Preferences
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Tell us your budget, travel dates, and interests
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="bg-pink-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4"
+            >
+              3
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              Get Recommendations
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Receive personalized activity and accommodation suggestions
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4"
+            >
+              4
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              Finalize & Book
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Review your itinerary and book your perfect trip
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Sample Destinations Gallery -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Popular Destinations
+          </h2>
+          <p class="text-lg text-gray-600">
+            Get inspired by these amazing travel destinations
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-lg">
+              <img
+                src="https://vardhmanvacations.com/blog/wp-content/uploads/2024/09/jatayu-earth-center-kollam-1024x646.jpg"
+                alt="Paris, France"
+                class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-opacity duration-300"
+              ></div>
+              <div class="absolute bottom-2 left-2 text-white">
+                <p class="font-semibold text-sm">Paris</p>
+                <p class="text-xs">France</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-lg">
+              <img
+                src="https://s3.india.com/wp-content/uploads/2024/08/must-do-activites-in-kannur.jpg?impolicy=Medium_Widthonly&w=330"
+                alt="Tokyo, Japan"
+                class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-opacity duration-300"
+              ></div>
+              <div class="absolute bottom-2 left-2 text-white">
+                <p class="font-semibold text-sm">Tokyo</p>
+                <p class="text-xs">Japan</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-lg">
+              <img
+                src="https://cdn.audleytravel.com/2478/1770/79/16027396-pura-ulun-danu-bratan-bali.jpg"
+                alt="Bali, Indonesia"
+                class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-opacity duration-300"
+              ></div>
+              <div class="absolute bottom-2 left-2 text-white">
+                <p class="font-semibold text-sm">Bali</p>
+                <p class="text-xs">Indonesia</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-lg">
+              <img
+                src="https://www.keralatourism.org/images/microsites/kochi/fort-kochi.jpg"
+                alt="Rome, Italy"
+                class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-opacity duration-300"
+              ></div>
+              <div class="absolute bottom-2 left-2 text-white">
+                <p class="font-semibold text-sm">Rome</p>
+                <p class="text-xs">Italy</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-lg">
+              <img
+                src="https://lp-cms-production.imgix.net/features/2017/09/dubai-marina-skyline-2c8f1708f2a1.jpg?auto=format,compress&q=72&w=1440&h=810&fit=crop"
+                alt="Dubai, UAE"
+                class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-opacity duration-300"
+              ></div>
+              <div class="absolute bottom-2 left-2 text-white">
+                <p class="font-semibold text-sm">Dubai</p>
+                <p class="text-xs">UAE</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-lg">
+              <img
+                src="https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/royal/data/ports/santorini-greece/overview/santorini-greece-oia-white-blue.jpg?$750x320$"
+                alt="Santorini, Greece"
+                class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-opacity duration-300"
+              ></div>
+              <div class="absolute bottom-2 left-2 text-white">
+                <p class="font-semibold text-sm">Santorini</p>
+                <p class="text-xs">Greece</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-lg">
+              <img
+                src="https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg"
+                alt="New York, USA"
+                class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-opacity duration-300"
+              ></div>
+              <div class="absolute bottom-2 left-2 text-white">
+                <p class="font-semibold text-sm">New York</p>
+                <p class="text-xs">USA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-lg">
+              <img
+                src="https://i.natgeofe.com/n/4def1048-f5e5-4973-ad3a-e188a97d363f/regents-street-london-england.jpg"
+                alt="London, UK"
+                class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-opacity duration-300"
+              ></div>
+              <div class="absolute bottom-2 left-2 text-white">
+                <p class="font-semibold text-sm">London</p>
+                <p class="text-xs">UK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-indigo-600 to-purple-600">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">
+          Ready to Start Your Adventure?
+        </h2>
+        <p class="text-xl text-gray-200 mb-8">
+          Join thousands of satisfied travelers who have planned their perfect
+          trips with WanderGuide
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100"
+          >
+            <i class="fas fa-phone mr-2"></i>Call Us: 999999999
+          </button>
+          <button
+            class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600"
+          >
+            <i class="fas fa-envelope mr-2"></i>Email: info@WanderWhrill.com
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h3 class="text-2xl font-bold text-indigo-400 mb-4">
+            <i class="fas fa-compass mr-2"></i>WanderWhrill
+          </h3>
+          <p class="text-gray-400 mb-4">
+            Your trusted companion for unforgettable travel experiences
+          </p>
+          <div class="border-t border-gray-800 mt-6 pt-6">
+            <p class="text-gray-400">
+              &copy; 2025 WanderWhrill. All rights reserved by vishnu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
