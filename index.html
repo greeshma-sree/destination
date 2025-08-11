@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="media/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
 
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -21,75 +21,201 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Text:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Text:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
         rel="stylesheet">
+
 
 </head>
 
 <body>
 
-    <div class="hero">
-        <!-- Navigation Bar -->
+<div class="hero relative">
+    <!-- Navigation Bar -->
+    <nav class="bg-transparent flex flex-col md:flex-row md:items-center md:justify-between px-6 md:px-20 py-4 absolute top-0 w-full z-20">
+        <!-- logo -->
+        <a href="">
+            <img class="w-20 md:w-24" src="./media/logo.png" alt="">
+        </a>
 
-        <nav class=" bg-transparent h-100px flex items-center justify-between px-20 absolute top-0 w-full z-2">
+        <!-- nav items -->
+        <ul class="list-none flex flex-col md:flex-row gap-3 md:gap-5 mt-4 md:mt-0 text-lg md:text-2xl font-medium text-white">
+            <li><a class="relative group" href="">
+                Things to do
+                <span class="absolute top-8 left-1/2 w-0 h-[4px] bg-white duration-700 group-hover:w-1/2"></span>
+                <span class="absolute top-8 left-1/2 w-0 h-[4px] bg-white duration-700 group-hover:w-1/2 group-hover:left-0"></span>
+            </a></li>
+            <li><a class="group relative inline-block" href="./wheretogo.html">
+                Where to go
+                <span class="absolute top-8 left-1/2 w-0 h-[4px] bg-white duration-700 group-hover:w-1/2"></span>
+                <span class="absolute top-8 left-1/2 w-0 h-[4px] bg-white duration-700 group-hover:w-1/2 group-hover:left-0"></span>
+            </a></li>
+            <li><a class="group relative" href="./plan.html">
+                Plan your trip
+                <span class="absolute top-8 left-1/2 w-0 h-[4px] bg-white duration-700 group-hover:w-1/2"></span>
+                <span class="absolute top-8 left-1/2 w-0 h-[4px] bg-white duration-700 group-hover:w-1/2 group-hover:left-0"></span>
+            </a></li>
+            <li><a class="group relative" href="">
+                Events
+                <span class="absolute top-8 left-1/2 w-0 h-[4px] bg-white duration-700 group-hover:w-1/2"></span>
+                <span class="absolute top-8 left-1/2 w-0 h-[4px] bg-white duration-700 group-hover:w-1/2 group-hover:left-0"></span>
+            </a></li>
+        </ul>
 
-
-            <!-- logo -->
-
-
-
-            <a href="">
-                <img class="" width="80px" src="./media/logo.png" alt="">
-            </a>
-
-            <!-- nav items -->
-            <ul class="list-none flex gap-5 mr-10 text-2xl font-medium text-white">
-                <li><a class="hover:underline underline-offset-38" href="">
-                        Things to do
-                    </a></li>
-                <li><a class="hover:underline underline-offset-38" href="./wheretogo.html">
-                        Where to go
-                    </a></li>
-                <li><a class="hover:underline underline-offset-38" href="./plan.html">
-                        Plan your trip
-                    </a></li>
-                <li><a class="hover:underline underline-offset-38" href="">
-                        Events
-                    </a></li>
-            </ul>
-            <div class="text-2xl text-white border p-1.5 rounded-full hover:bg-black/20">
+        <!-- icons -->
+        <div class="flex gap-3 mt-4 md:mt-0">
+            <div class="text-xl md:text-2xl text-white border p-1.5 rounded-full hover:bg-black/20">
                 <i class="fa-regular fa-map"></i>
             </div>
-            <div class="text-2xl text-white border p-1.5 rounded-full hover:bg-black/20">
+            <div class="text-xl md:text-2xl text-white border p-1.5 rounded-full hover:bg-black/20">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- background video -->
-        <video class=" w-full h-auto relative" loop autoplay muted playsinline
-            src="./media/3018669-hd_1920_1080_24fps.mp4"></video>
+    <!-- background video -->
+    <video class="w-full h-auto" loop autoplay muted playsinline src="./media/3018669-hd_1920_1080_24fps.mp4"></video>
 
-        <div class="bg-black w-full h-214 absolute top-0 z-1 opacity-25"></div>
+    <div class="bg-black w-full h-full absolute top-0 z-10 opacity-35"></div>
 
-        <div class="absolute top-60 ml-25 text-white z-2 font-mono font-black w-200">
-            <h1 class="text-7xl mb-5">Find your place in WanderWhrill</h1>
-            <p class="text-1xl font-light">Where endless sunshine meets vibrant culture, enriching experiences and
-                limitless adventure.</p>
+    <div class="absolute top-32 sm:top-40 md:top-60 px-6 md:ml-25 text-white z-20 font-mono font-black max-w-full md:max-w-2xl">
+        <h1 class="text-3xl sm:text-5xl md:text-7xl mb-5">Find your place in WanderWhrill</h1>
+        <p class="text-sm sm:text-base md:text-xl font-light">
+            Where endless sunshine meets vibrant culture, enriching experiences and limitless adventure.
+        </p>
+    </div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-4 md:mx-20 my-10 md:my-30">
+    <div class="col-span-1 sm:col-span-2">
+        <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold">Experience WanderWhrill</h1>
+        <button class="bg-teal-600 px-5 py-2 sm:px-7 sm:py-3 mt-5 mb-6 rounded-3xl font-semibold text-white">RECOMMENDED</button>
+        <div class="overflow-hidden group">
+            <a href=""><img class="group-hover:scale-110 object-cover duration-700 w-full" src="./media/ex-1.jpg" alt=""></a>
+        </div>
+        <div class="cursor-pointer mt-3">
+            <p class="font-normal text-sm sm:text-base">THE SUMMER YOU'VE BEEN WAITING FOR IS HERE.</p>
+            <h1 class="text-xl sm:text-2xl lg:text-3xl font-semibold hover:text-blue-950">Escape to the Himalayas</h1>
+        </div>
+    </div>
+    <div class="mt-8 sm:mt-0 cursor-pointer">
+        <div class="overflow-hidden group">
+            <a href=""><img class="group-hover:scale-110 object-cover duration-700 w-full" src="./media/ex-2.jpg" alt=""></a>
+        </div>
+        <div class="mt-2">
+            <p class="font-normal text-sm sm:text-base">LAGO DI BRAIES</p>
+            <h1 class="text-xl sm:text-2xl lg:text-3xl font-semibold hover:text-blue-950">A Day at the Alpine Lake</h1>
+        </div>
+        <div class="overflow-hidden group mt-10 sm:mt-20">
+            <a href=""><img class="group-hover:scale-110 object-cover duration-700 w-full" src="./media/ex-3.jpg" alt=""></a>
+        </div>
+        <p class="font-normal text-sm sm:text-base mt-2">A GOLDEN-HOUR IN THE MOUNTAINS</p>
+        <h1 class="text-xl sm:text-2xl lg:text-3xl font-semibold hover:text-blue-950">Echoes from the Edge</h1>
+    </div>
+</div>
+
+<!-- MAP SECTION -->
+<section class="relative w-full h-[80vh] md:h-screen overflow-hidden">
+    <img src="./media/mapbg.jpg" alt="Wanderwhrill" class="absolute inset-0 w-full h-full object-cover z-0">
+    <div class="absolute inset-0 bg-black/30 z-10"></div>
+    <div class="relative z-20 flex flex-col justify-center h-full px-4 sm:px-8 md:px-20 max-w-full md:max-w-5xl">
+        <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-4">
+            Explore Wanderwhrill's diverse regions
+        </h3>
+        <div class="flex flex-wrap gap-2 sm:gap-3 mb-6">
+            <button class="bg-teal-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium">MAIN CITY</button>
+            <button class="bg-gray-200 text-gray-700 px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium">BEACH</button>
+            <button class="bg-gray-200 text-gray-700 px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium">HILLS</button>
+        </div>
+        <h1 class="text-white text-2xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
+            Discover the heart of Wanderwhrill
+        </h1>
+        <p class="text-gray-200 text-sm sm:text-base md:text-lg max-w-2xl mb-8">
+            Explore the city of Wanderwhrill, where ancient heritage meets modern marvels.
+            Be amongst cultural wonders and breathtaking landscapes.
+        </p>
+        <a href="#" class="bg-white text-black px-4 py-2 sm:px-6 sm:py-3 rounded-full font-semibold text-sm sm:text-lg hover:bg-purple-500 transition hover:text-white">
+            Explore Wanderwhrill →
+        </a>
+    </div>
+</section>
+
+<!-- PLAN YOUR TRIP -->
+<section class="px-4 sm:px-6 py-8 sm:py-12">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">Plan your trip</h2>
+    <a href="#" class="inline-flex items-center text-base sm:text-lg font-medium text-black mb-8">
+        Start Planning
+        <span class="ml-2 bg-orange-500 text-white w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center rounded-full">→</span>
+    </a>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="relative group overflow-hidden cursor-pointer">
+            <img src="./media/ex-1.jpg" alt="Visa Info" class="w-full h-60 sm:h-80 object-cover">
+            <div class="absolute inset-0 flex items-end p-4">
+                <h3 class="text-white text-lg font-bold">Visa Information</h3>
+            </div>
+        </div>
+        <div class="relative group overflow-hidden cursor-pointer">
+            <img src="./media/ex-1.jpg" alt="Visa Info" class="w-full h-60 sm:h-80 object-cover">
+            <div class="absolute inset-0 flex items-end p-4">
+                <h3 class="text-white text-lg font-bold">Visa Information</h3>
+            </div>
+        </div>
+        <div class="relative group overflow-hidden cursor-pointer">
+            <img src="./media/ex-3.jpg" alt="Info" class="w-full h-60 sm:h-80 object-cover">
+            <div class="absolute inset-0 flex items-end p-4">
+                <h3 class="text-white text-lg font-bold">Essential Information</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-purple-900 text-white py-8 sm:py-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div>
+            <h3 class="text-lg sm:text-xl font-bold mb-4">Quick links</h3>
+            <div class="grid grid-cols-2 gap-y-2 text-sm">
+                <a href="#" class="hover:underline">Things to do</a>
+                <a href="#" class="hover:underline">Where to go</a>
+                <a href="#" class="hover:underline">Plan your trip</a>
+                <a href="#" class="hover:underline">Events</a>
+                <a href="#" class="hover:underline">FAQs</a>
+                <a href="#" class="hover:underline">Contact us</a>
+                <a href="#" class="hover:underline">What to see</a>
+                <a href="#" class="hover:underline">Business</a>
+                <a href="#" class="hover:underline">Sitemap</a>
+            </div>
+        </div>
+        <div>
+            <h3 class="text-lg sm:text-xl font-bold mb-4">Newsletter</h3>
+            <p class="text-sm mb-4">
+                Sign up for exciting Wanderwhrill news, learn more about our events and get great travel ideas.
+            </p>
+            <a href="#" class="inline-flex items-center bg-orange-500 text-white px-4 sm:px-5 py-2 rounded-full font-semibold hover:bg-orange-600 transition">
+                Subscribe now <span class="ml-2">→</span>
+            </a>
+        </div>
+        <div>
+            <h3 class="text-lg sm:text-xl font-bold mb-4">Follow us</h3>
+            <div class="flex space-x-3">
+                <a href="#" class="bg-purple-800 hover:bg-purple-700 p-3 rounded-full"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="bg-purple-800 hover:bg-purple-700 p-3 rounded-full"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="bg-purple-800 hover:bg-purple-700 p-3 rounded-full"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="bg-purple-800 hover:bg-purple-700 p-3 rounded-full"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="bg-purple-800 hover:bg-purple-700 p-3 rounded-full"><i class="fab fa-tripadvisor"></i></a>
+            </div>
         </div>
     </div>
 
-
-
-    <!-- Next Section -->
-
-    <div class="">
-
+    <div class="border-t border-purple-800 mt-6 sm:mt-8 pt-4 sm:pt-6 container mx-auto px-6 flex flex-col md:flex-row justify-between text-xs sm:text-sm text-gray-300">
+        <div class="flex space-x-4 sm:space-x-6 mb-4 md:mb-0">
+            <a href="#" class="hover:underline">Terms and conditions</a>
+            <a href="#" class="hover:underline">Privacy policy</a>
+            <a href="#" class="hover:underline">Cookie policy</a>
+        </div>
+        <p>Copyright © 2025 Wanderwhrill. All Rights Reserved.</p>
     </div>
-
-
-
-
-
+</footer>
 </body>
 
 </html>
