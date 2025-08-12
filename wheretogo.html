@@ -25,8 +25,28 @@
 
     <!-- Hero Section -->
     <div
-        class="bg-[url('https://images.emtcontent.com/holiday-img/home-img/dubai_newbb.png')] bg-cover bg-center h-60 md:h-screen flex flex-col justify-center items-center text-white">
+        class="bg-[url('https://images.emtcontent.com/holiday-img/home-img/dubai_newbb.png')] bg-cover bg-center h-60 md:h-120 flex flex-col justify-center items-center text-white">
         <h1 class="text-2xl md:text-6xl font-bold text-center">Where Every Experience Counts!</h1>
+        <form class="max-w-md mx-auto mt-20">
+            <label for="default-search"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                </div>
+                <input type="search" id="default-search"
+                    class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    required />
+                <button type="submit"
+                    class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+            </div>
+        </form>
+
+        
     </div>
 
     <!-- Top Trending Destinations -->
@@ -104,7 +124,7 @@
         </div>
     </section>
 
-    <!-- Gulf Gateways -->
+
     <section class="container mx-auto px-4 md:px-20 mt-16">
         <h1 class="text-2xl md:text-5xl font-bold">Gulf Gateways</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
@@ -119,9 +139,10 @@
                 <p class="mt-4 font-semibold text-lg md:text-2xl">Starting Per Person</p>
                 <p class="mt-2 font-semibold text-lg md:text-2xl">@54,099 <del>77,289</del></p>
             </div>
-              <div class="text-center p-3 relative bg-white rounded-lg shadow">
+            <div class="text-center p-3 relative bg-white rounded-lg shadow">
                 <img class="w-full max-h-56 object-cover rounded-lg"
-                    src="https://www.cleartrip.com/holidays/wp-content/uploads/2024/02/singapore-city-escape.jpg" alt="">
+                    src="https://www.cleartrip.com/holidays/wp-content/uploads/2024/02/singapore-city-escape.jpg"
+                    alt="">
                 <div class="absolute top-4 left-4">
                     <h2 class="text-white font-semibold text-lg drop-shadow-md">Singapore Theme Park</h2>
                     <p class="text-white text-sm drop-shadow-md">Limited Luxury</p>
@@ -141,7 +162,8 @@
             </div>
             <div class="text-center p-3 relative bg-white rounded-lg shadow">
                 <img class="w-full max-h-56 object-cover rounded-lg"
-                    src="https://blog.ipleaders.in/wp-content/uploads/2021/08/Theme_park_AdobeStock_222547272_1.jpg" alt="">
+                    src="https://blog.ipleaders.in/wp-content/uploads/2021/08/Theme_park_AdobeStock_222547272_1.jpg"
+                    alt="">
                 <div class="absolute top-4 left-4">
                     <h2 class="text-white font-semibold text-lg drop-shadow-md">Dubai</h2>
                     <p class="text-white text-sm drop-shadow-md">Gateway to the Arabian Gulf</p>
@@ -151,8 +173,46 @@
             </div>
         </div>
     </section>
+    <section class="container mx-auto px-4 md:px-20 mt-16">
+        <h1 class="text-2xl md:text-5xl font-bold">Top International Destinations
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+            <!-- Card -->
+            <div class="text-center p-3 relative bg-white rounded-lg shadow">
+                <img class="w-full max-h-56 object-cover rounded-lg"
+                    src="https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/3052/Beautiful%20tropical%20beach%20in%20Thailand.jpg??crop=156:227&downsize=156:227"
+                    alt="">
+                <p class="mt-4 font-semibold text-lg md:text-2xl">Thailand</p>
 
-    
+            </div>
+            <div class="text-center p-3 relative bg-white rounded-lg shadow">
+                <img class="w-full max-h-56 object-cover rounded-lg"
+                    src="https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1993/Majestic%20Paradise%20Island%20Resort.jpg??crop=156:227&downsize=156:227"
+                    alt="">
+
+                <p class="mt-4 font-semibold text-lg md:text-2xl">Maldives</p>
+            </div>
+            <div class="text-center p-3 relative bg-white rounded-lg shadow">
+                <img class="w-full max-h-56 object-cover rounded-lg"
+                    src="https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/3736/CCE52844-6EB1-4D3B-8DC2-036CB1312BE6.jpg??crop=156:227&downsize=156:227"
+                    alt="">
+
+                <p class="mt-4 font-semibold text-lg md:text-2xl">Vietnam</p>
+            </div>
+            <div class="text-center p-3 relative bg-white rounded-lg shadow">
+                <img class="w-full max-h-56 object-cover rounded-lg"
+                    src="https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/2887/Colombo-skyline.jpg??crop=156:227&downsize=156:227"
+                    alt="">
+
+                <p class="mt-4 font-semibold text-lg md:text-2xl">Srilanka</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
 
     <!-- Testimonials -->
     <section class="container mx-auto px-4 md:px-20 mt-20">
